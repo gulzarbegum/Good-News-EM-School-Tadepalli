@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GOOD NEWS ENGLISH MEDIUM HIGH SCHOOL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <style>
+        .but {
+            background-color: #150E58;
+            border-radius: 12px;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px auto;
+            cursor: pointer;
+            display: block;
+            width: fit-content;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, sans-serif;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        section .leftBox {
+            width: 50%;
+            height: 100%;
+            float: left;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+
+        section .leftBox .content {
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            transition: .5s;
+        }
+
+        section .leftBox .content:hover {
+            background: #e91e63;
+        }
+
+        section .leftBox .content h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+
+        section .leftBox .content p {
+            margin: 10px 0 0;
+            padding: 0;
+        }
+
+        section .events {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            float: right;
+            box-sizing: border-box;
+        }
+
+        section .events ul {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        section .events ul li {
+            list-style: none;
+            background: #fff;
+            box-sizing: border-box;
+            height: 200px;
+            margin: 15px 0;
+        }
+
+        section .events ul li .time {
+            position: relative;
+            padding: 20px;
+            background: #262626;
+            box-sizing: border-box;
+            width: 30%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            transition: .5s;
+        }
+
+        section .events ul li:hover .time {
+            background: #e91e63;
+        }
+
+        section .events ul li .time h2 {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        section .events ul li .time h2 span {
+            font-size: 30px;
+        }
+
+        section .events ul li .details {
+            padding: 20px;
+            background: #fff;
+            box-sizing: border-box;
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+
+        section .events ul li .details h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+        }
+
+        section .events ul li .details p {
+            margin: 10px 0 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        section .events ul li .details a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1.5px solid #262626;
+            margin-top: 8px;
+            font-size: 18px;
+            transition: .5s;
+        }
+
+        section .events ul li .details a:hover {
+            background: #e91e63;
+            color: #fff;
+            border-color: #e91e63;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+        }
+    </style>
+</head>
+<body>
+
+<a class="but" href="./index.html">HOME</a>
+
+<center><h2>Welcome! Here are the events we perform to make memorable moments</h2></center>
+<h3><center>UPCOMING EVENTS</center></h3>
+
+<section>
+    <div class="leftBox">
+        <div class="content">
+            <h1>Events and Shows</h1>
+            <p>
+                Welcome to our School Events, Shows, and Tours page! At GOOD NEWS ENGLISH MEDIUM HIGH SCHOOL, we believe in providing our students, parents, and the wider community with a well-rounded and enriching educational experience. This page serves as a hub for all the exciting events, captivating shows, and enlightening tours happening at our school.
+            </p>
+        </div>
+    </div>
+    <div class="events">
+        <ul>
+            <li>
+                <div class="time">
+                    <h2>5<SUP>th</SUP> <br><span>NOVEMBER</span></h2>
+                </div>
+                <div class="details">
+                    <h3>A nice beach tour...</h3>
+                    <p>Field Trips: Students enjoyed enriching field trips to the beach and museum as part of their learning experiences.</p>
+                    <a href="com.html">details</a>
+                </div>
+                <div style="clear: both;"></div>
+            </li>
+            <li>
+                <div class="time">
+                    <h2>03<sup>rd</sup><br><span>FEBRUARY</span></h2>
+                </div>
+                <div class="details">
+                    <h3>ANNUAL DAY..</h3>
+                    <p>Our talented students will showcase their acting skills in this year's school play.</p>
+                </div>
+                <div style="clear:both;"></div>
+            </li>
+            <li>
+                <div class="time">
+                    <h2>12<SUP>th</SUP>, 13<SUP>th</SUP> <br><span>DECEMBER</span></h2>
+                </div>
+                <div class="details">
+                    <h3>Parent-Teacher Conferences:</h3>
+                    <p>Parent-Teacher Conferences provide an opportunity for parents to discuss their child's progress with our teaching staff. Your participation is highly encouraged.</p>
+                </div>
+                <div style="clear:both;"></div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<center><i><u><h3>HELD EVENTS</h3></u></i></center>
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="event3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="eee.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="ee.jpg" style="width:100%">
+    </div>
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<br>
+<br>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33%;
+  padding: 30px;
+  height: 300px;
+  opacity: 0.7;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.but {
+  background-color: #150E58;
+  border-radius: 12px;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.bb {
+  background-color: lightgrey;
+  width: 45%;
+  padding: 10px;
+  margin: 20px;
+  float: right;
+}
+
+iframe {
+  border: 10px;
+  width: 45%;
+  height: 450px;
+  float: left;
+}
+
+.center {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="center">
+  <a href="./index.html" class="but">HOME</a>
+</div>
+<br><br>
+<div class="clearfix">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3825.906030330373!2d80.6226142!3d16.4802952!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f071b3bf6db1%3A0x6deb32f8501b0c28!2sGood%20News%20English%20Medium%20School!5e0!3m2!1sen!2sin!4v1698950603017!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="bb">
+    <h2><u><center>CONTACT US</center></u></h2>
+    <p><center>goodnewsschoolem@gmail.com</center></p>
+    <p><center>CELL: 81062 99498</center></p>
+    <p><center>@PRINCIPAL: +91 99665 83624</center></p>
+    <form action="https://formspree.io/f/xvgpopdz" method="post">
+      <center>Name: <input type="text" name="name" required placeholder="Name"></center>
+      <center>Email: <input type="email" name="email" required placeholder="Email"></center>
+      <i><h3><u><center>Message</center></u></h3></i>
+      <center><textarea rows="10" cols="30" name="message" required placeholder="Message"></textarea></center>
+      <center><button type="submit">Submit</button></center>
+    </form>
+  </div>
+</div>
+<br><br><br>
+<h1><i><b><center>OUR PROGRAMS AND CURRICULUM</center></b></i></h1>
+<br><br>
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+    <h2>Primary Education</h2>
+    <p><i><b>Our primary education program is designed to help younger students develop the foundational skills necessary for academic success.</b></i></p>
+    <ul>
+      <li>Small Class Sizes</li>
+      <li>Qualified Teachers</li>
+      <li>Engaging Curriculum</li>
+    </ul>
+  </div>
+  <div class="box" style="background-color:#ccc">
+    <h2>Secondary Education</h2>
+    <p><i><b>Our secondary education program offers a challenging and rewarding educational experience to help students prepare for college and beyond.</b></i></p>
+    <ul>
+      <li>Advanced Coursework</li>
+      <li>College Prep Courses</li>
+      <li>Extracurricular Activities</li>
+    </ul>
+  </div>
+  <div class="box" style="background-color:#DDD">
+    <h2>Extra-Curricular Activities</h2>
+    <p><i><b>Our school offers a variety of extra-curricular activities to help students discover their interests and develop new skills.</b></i></p>
+    <ul>
+      <li>Sports Teams</li>
+      <li>Music and Arts Programs</li>
+      <li>Sports Club</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

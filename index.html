@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good News English Medium High School</title>
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+
+    <style>
+        body {
+            background-image: url("image2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: 'Georgia', serif;
+            color: #01051C;
+        }
+
+        .navbar {
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0); /* Transparent */
+        }
+
+        .navbar a {
+            background-color: #150E58;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        marquee {
+            color: black;
+            font: italic small-caps bold 20px/30px Georgia, serif;
+            background-color: rgba(119, 135, 248, 0.8);
+            padding: 10px 0;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .box h2 {
+            margin-top: 0;
+        }
+
+        @media (min-width: 768px) {
+            .boxes {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .box {
+                flex: 1;
+                margin-right: 10px;
+            }
+
+            .box:last-child {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<marquee behavior="alternate">Admissions are closed</marquee>
+
+<div class="navbar">
+    <a href="infra.html">Infrastructure</a>
+    <a href="staff.html">Staff Members</a>
+    <a href="events.html">Events</a>
+    <a href="top results.html">Top Results</a>
+    <a href="achieve.html">Achievements</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="content">
+    <div class="boxes">
+        <div class="box">
+            <h2>Individualized Learning</h2>
+            <p><i><b>Our teachers and staff are dedicated to providing personalized instruction tailored to the needs of each student.</b></i></p>
+        </div>
+        <div class="box">
+            <h2>Safe and Supportive Environment</h2>
+            <p><i><b>We strive to create a safe and supportive learning environment that encourages students to reach their full potential.</b></i></p>
+        </div>
+        <div class="box">
+            <h2>Extra-Curricular Activities</h2>
+            <p><i><b>Our school offers a wide range of extra-curricular activities, including sports, music, and clubs to help students develop their talents and interests.</b></i></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
