@@ -13,11 +13,10 @@
             padding: 14px 25px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
+            display: block;
             font-size: 16px;
             margin: 20px auto;
             cursor: pointer;
-            display: block;
             width: fit-content;
         }
 
@@ -28,132 +27,108 @@
         }
 
         section {
+            display: flex;
+            flex-wrap: wrap;
             width: 100%;
             height: 100vh;
             background-size: cover;
         }
 
-        section .leftBox {
-            width: 50%;
-            height: 100%;
-            float: left;
-            padding: 50px;
+        .leftBox, .events {
             box-sizing: border-box;
+            padding: 20px;
+            width: 100%;
         }
 
-        section .leftBox .content {
+        .leftBox .content {
             color: #fff;
             background: rgba(0, 0, 0, 0.5);
-            padding: 40px;
-            transition: .5s;
+            padding: 20px;
+            transition: 0.5s;
         }
 
-        section .leftBox .content:hover {
+        .leftBox .content:hover {
             background: #e91e63;
         }
 
-        section .leftBox .content h1 {
+        .leftBox .content h1 {
             margin: 0;
             padding: 0;
-            font-size: 50px;
+            font-size: 30px;
             text-transform: uppercase;
         }
 
-        section .leftBox .content p {
+        .leftBox .content p {
             margin: 10px 0 0;
             padding: 0;
         }
 
-        section .events {
-            position: relative;
-            width: 50%;
-            height: 100%;
+        .events {
             background: rgba(0, 0, 0, 0.5);
-            float: right;
-            box-sizing: border-box;
+            overflow-y: auto;
         }
 
-        section .events ul {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
+        .events ul {
             margin: 0;
-            padding: 40px;
-            box-sizing: border-box;
-        }
-
-        section .events ul li {
+            padding: 0;
             list-style: none;
-            background: #fff;
-            box-sizing: border-box;
-            height: 200px;
-            margin: 15px 0;
         }
 
-        section .events ul li .time {
-            position: relative;
+        .events ul li {
+            background: #fff;
+            margin: 15px 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .events ul li .time {
             padding: 20px;
             background: #262626;
-            box-sizing: border-box;
-            width: 30%;
-            height: 100%;
-            float: left;
+            color: #fff;
             text-align: center;
-            transition: .5s;
+            flex: 1;
         }
 
-        section .events ul li:hover .time {
+        .events ul li:hover .time {
             background: #e91e63;
         }
 
-        section .events ul li .time h2 {
-            position: absolute;
+        .events ul li .time h2 {
             margin: 0;
             padding: 0;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            font-size: 30px;
-            line-height: 30px;
+            font-size: 20px;
         }
 
-        section .events ul li .time h2 span {
-            font-size: 30px;
-        }
-
-        section .events ul li .details {
+        .events ul li .details {
             padding: 20px;
-            background: #fff;
-            box-sizing: border-box;
-            width: 70%;
-            height: 100%;
-            float: left;
+            flex: 2;
         }
 
-        section .events ul li .details h3 {
+        .events ul li .details h3 {
             margin: 0;
             padding: 0;
-            font-size: 22px;
+            font-size: 18px;
         }
 
-        section .events ul li .details p {
+        .events ul li .details p {
             margin: 10px 0 0;
             padding: 0;
-            font-size: 16px;
+            font-size: 14px;
         }
 
-        section .events ul li .details a {
+        .events ul li .details a {
             display: inline-block;
             text-decoration: none;
             padding: 10px 15px;
             border: 1.5px solid #262626;
             margin-top: 8px;
-            font-size: 18px;
-            transition: .5s;
+            font-size: 14px;
+            transition: 0.5s;
         }
 
-        section .events ul li .details a:hover {
+        .events ul li .details a:hover {
             background: #e91e63;
             color: #fff;
             border-color: #e91e63;
@@ -164,7 +139,7 @@
         }
 
         .slideshow-container {
-            max-width: 1000px;
+            max-width: 100%;
             position: relative;
             margin: auto;
         }
@@ -191,6 +166,41 @@
         @keyframes fade {
             from {opacity: .4}
             to {opacity: 1}
+        }
+
+        @media only screen and (max-width: 768px) {
+            .leftBox, .events {
+                width: 100%;
+            }
+            
+            .events ul li {
+                flex-direction: column;
+            }
+
+            .events ul li .time, .events ul li .details {
+                width: 100%;
+                text-align: center;
+            }
+
+            .events ul li .details a {
+                margin-top: 12px;
+            }
+
+            .leftBox .content h1 {
+                font-size: 24px;
+            }
+
+            .events ul li .details h3 {
+                font-size: 16px;
+            }
+
+            .events ul li .details p {
+                font-size: 12px;
+            }
+
+            .events ul li .details a {
+                font-size: 12px;
+            }
         }
 
         @media only screen and (max-width: 300px) {
@@ -250,9 +260,10 @@
         </ul>
     </div>
 </section>
+<br><br><br><br><br><br><br>
 
 <center><i><u><h3>HELD EVENTS</h3></u></i></center>
-
+<br>
 <div class="slideshow-container">
     <div class="mySlides fade">
         <img src="event3.jpg" style="width:100%">
@@ -291,8 +302,8 @@
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
         setTimeout(showSlides, 2000);
     }
 </script>
